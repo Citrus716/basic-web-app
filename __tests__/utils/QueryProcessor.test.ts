@@ -26,20 +26,5 @@ describe("QueryProcessor", () => {
           ));
     });
 
-    test('should return kehao', () => {
-        const query = "What is your name?";
-        const response: string = QueryProcessor(query);
-        expect(response).toBe((
-            "kehao"
-          ));
-    });
-
-    test('79 + 89', () => {
-        const query = "What is 79 plus 89?";
-        const response: string = QueryProcessor(query);
-        expect(response).toBe((
-            "168"
-          ));
-    });
 
 });

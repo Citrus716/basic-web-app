@@ -25,4 +25,13 @@ describe("QueryProcessor", () => {
             "kehaoc"
           ));
     });
+
+    test('should return kehao', () => {
+        const query = "What is your name?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "kehao"
+          ));
+    });
+
 });
